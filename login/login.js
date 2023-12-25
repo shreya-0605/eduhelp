@@ -25,7 +25,7 @@
         let MainForm = document.getElementById('MainForm');
         let ForgotPassLabel = document.getElementById('forgotpasslabel');
         
-        let SignInUser = evt =>{
+        let SignInUser = evt =>{ 
             evt.preventDefault();
 
            signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
