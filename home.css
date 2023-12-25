@@ -1,4 +1,6 @@
-
+body{
+  background-color: black;
+}
 .navbar{
   display:flex;
   width: 100%;
@@ -13,9 +15,10 @@
   font-family: 'Philosopher', sans-serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 1px 1px rgba(222, 219, 219, 0.992);
-  
+  text-shadow: 0.5px 0.8px rgba(222, 219, 219, 0.992);
+  cursor: pointer;
 }
+
 .nav-content{
  display: flex;
  flex-direction: row;
@@ -35,10 +38,17 @@
 }
 .profile,.notification{
     border-radius: 18px;
-    margin-left: 13px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.profile{
+  margin-right: 10px;
+}
+
 .profile:hover,.notification:hover{
-  background-color: grey;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .img{
