@@ -1,0 +1,57 @@
+.bg-info-subtle.text-emphasis-info{
+    background-image: url(../images/p4.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.row.col-12.d-flex.justify-content-center{
+    height: 165px;
+}
+
+.col-3.fs-1{
+    color: rgb(27, 162, 167); 
+    text-align:center; 
+    padding-top: 80px; 
+    font-family: 'Philosopher', sans-serif;
+    font-weight:bold;
+}
+
+.col-6.card.m-auto{
+    height: 430px;  
+    background-image:url(../images/p3.jpg); 
+    background-size: cover; 
+}
+
+.col-5.z-3.position-absolute.mb-5{
+    background-color:rgb(2, 54, 57); 
+    border-radius:8px; 
+    left: 45px; 
+    bottom: 1px; top: 47px; 
+    padding-top: 30px;
+}
+
+.row.mb-4{
+    cursor: pointer; 
+    font-size: 15px; 
+    color: rgb(95, 200, 200);
+}
+
+.btn.btn-info{
+    float: right;  
+    background: linear-gradient(#061820, rgb(1, 207, 222))
+}
+
+.btn.btn-info:hover{
+    color: #fff; 
+    background-color: black;
+    background: var(--bs-btn-hover-bg) linear-gradient(#061820, rgb(71, 75, 75));
+    border-color: black;
+}
+
+.btn.btn-info:active{
+    border-color: black;
+}
+
+.btn.btn-outline-info.me-2{
+    float: right;
+}
