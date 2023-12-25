@@ -15,7 +15,7 @@ body{
   font-family: 'Philosopher', sans-serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 0.5px 0.8px rgba(222, 219, 219, 0.992);
+  text-shadow: 0.8px 0.8px rgba(222, 219, 219, 0.992);
   cursor: pointer;
 }
 
@@ -55,3 +55,53 @@ body{
   width: 30px;
 }
 
+/* cards */
+.card.col-8.mb-4{
+  background-image: url(images/p3.jpg);
+  height: 70%;
+  width: 80%;
+}
+
+.image-box {
+  overflow: hidden;
+  border-radius: 3px 50px 50px 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: left;
+}
+
+.card-img-top {
+  width: 90%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 3px 50px 50px 3px; /* In case the image is not a perfect fit */
+  margin-left: 0%;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60%;
+  margin-top: 0%; 
+}
+
+.arrow img {
+  width: 40px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add a hover effect to the arrow */
+.arrow:hover img {
+  transform: translateX(5px); /* Move the arrow slightly to the right on hover */
+}
+
+.card-title{
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.card-text{
+  padding-top: 3%;
+  padding-right: 30%;
+}
