@@ -73,7 +73,7 @@ body{
   height: auto; /* Maintain aspect ratio */
   border-radius: 3px 50px 50px 3px; /* In case the image is not a perfect fit */
   margin-left: 0%;
-}
+} 
 
 .arrow {
   padding:7% 5% ;
