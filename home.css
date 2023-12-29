@@ -1,6 +1,17 @@
-body{
-  background-color: black;
+html,
+body {
+	scroll-behavior: smooth;
 }
+
+body {
+	font-family: "Montserrat", sans-serif;;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.3rem;
+	color: #b8c4cc;
+	background-color: #17202a;
+}
+
 .navbar{
   display:flex;
   width: 100%;
@@ -19,7 +30,6 @@ body{
   text-shadow: 0.8px 0.8px rgba(222, 219, 219, 0.992);
   cursor: pointer;
   padding-top: 16px;
-  
 }
 
 .nav-content{
@@ -30,9 +40,6 @@ body{
  padding-left: 40px;
  padding-right: 40px;
  height: 100%;
-}
-.row.col-12{
-  margin-top: 50px;
 }
 
 .icon-link,.logo{
@@ -59,9 +66,16 @@ body{
 }
 
 /* cards */
+.row.col-12.justify-content-center{
+  padding: 0px;
+}
 .card.col-8.mb-4{
   display: flex;
   background-image: url(images/p3.jpg);
+}
+
+.col-9.card-text{
+  color: #000;
 }
 
 .image-box {
@@ -72,16 +86,18 @@ body{
 }
 
 .card-img-top {
-  width: 90%; /* Make the image fill the container */
+  width: 95%; /* Make the image fill the container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 3px 50px 50px 3px; /* In case the image is not a perfect fit */
   margin-left: 0%;
 } 
 
+#blog-image{
+  height: 95%;
+}
 .arrow {
-  padding:7% 5% ;
+  padding:7% 10% ;
   justify-content: center;
-
 }
 
 .arrow img {
@@ -107,197 +123,182 @@ body{
   
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-/* ------------------------------------
-    CSS Variables
------------------------------------- */
-
-:root {
-	/* Colors */
-	--primary: #17202a;
-	--secondary: #ffffff;
-	--acent: #bd2a28;
-	--white: #ffffff;
-	--text-color: #b8c4cc; /* Text Color */
-	--border-color: #888888; /* Border Color */
-
-	--drop-shadow: rgba(0, 0, 0, 0.2);
-	--inner-shadow: rgba(0, 0, 0, 0.2);
-	--inner-shadow-2: rgba(255, 255, 255, 0.2);
-
-	/* Font-family */
-	--font-primary: "Montserrat", sans-serif;
-	--font-secondary: "Montserrat", sans-serif;
-
-	/* Font-size */
-	--text-small: 13px;
-	--base-text: 16px;
-	--text-large: 18px;
-
-	--heading1: 42px;
-	--heading2: 33px;
-	--heading3: 28px;
-	--heading4: 23px;
-	--heading5: 19px;
-
-	/* Line height */
-	--text-small-line-height: 1rem;
-	--base-line-height: 1.3rem;
-	--text-large-line-height: 1.4rem;
-
-	--heading1-line-height: 3.1rem;
-	--heading2-line-height: 2.5rem;
-	--heading3-line-height: 2.1rem;
-	--heading4-line-height: 1.7rem;
-	--heading5-line-height: 1.4rem;
-
-	/* Font weight */
-	--fontWeight-regular: 400;
-	--fontWeight-medium: 500;
-	--fontWeight-semibold: 600;
-	--fontWeight-bold: 900;
-
-	/* Spacing */
-
-	/* Padding */
-	--large-btn-padding: 12px 24px;
-	--small-btn-padding: 6px 16px;
-	--extra-small-btn-padding: 6px 14px;
-
-	/* Border & Line */
-	--box-border: 1px solid var(--border-color);
-	--line: 1px solid var(--border-color);
-
-	/* Shadow */
-	--drow-shadow: 0px 5px 20px 0px var(--drop-shadow);
-	--inner-shadow: 0px 0px 10px 0px var(--inner-shadow) inset;
-	--inner-shadow-2: 0px 0px 20px 0px var(--inner-shadow-2) inset;
-
-	/* Rounder, Radious, Circle */
-	--btn-radius: 12px;
-	--box-radius: 12px;
-
-	/* Transition */
-	--transition: all 0.3s ease-in-out;
-	--lazy-transition: all 0.6s ease-in-out;
+/* testimonials */
+.row.col-12.fs-2.mb-4.fw-semibold.justify-content-center{
+  font-family: 'Philosopher', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(71, 177, 177);
+  margin-top: 80px;
 }
 
-/* ------------------------------------
-    Common Css / Class
------------------------------------- */
-
-html,
-body {
-	scroll-behavior: smooth;
+#content {
+  max-width: 600px;
+  margin: 40px auto;
 }
 
-body {
-	font-family: var(--font-primary);
-	font-size: var(--base-text);
-	font-weight: var(--fontWeight-regular);
-	line-height: var(--base-line-height);
-	color: var(--text-color);
-	background-color: var(--primary);
-	position: relative;
-	overflow-x: hidden;
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  color: #000000ab;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
 }
 
-p {
-	font-size: var(--base-text);
-	font-weight: var(--fontWeight-regular);
-	line-height: var(--base-line-height);
-	color: var(--text-color);
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  font-style: normal;
 }
 
-a {
-	text-decoration: none;
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
 }
 
-a:hover {
-	text-decoration: none;
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: var(--font-primary);
-	color: var(--secondary);
-	font-weight: var(--fontWeight-bold);
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
 }
 
-.transition-lazy {
-	transition: var(--lazy-transition);
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: #efefef;
 }
 
-.fill-btn {
-	font-size: var(--base-text);
-	font-weight: var(--fontWeight-regular);
-	color: var(--white);
-	outline: none;
-	cursor: pointer;
-	border: 1px solid var(--acent);
-	background-color: var(--acent);
-	transition: var(--transition);
+#carouselExampleAutoplaying{
+  /* background-color: #212121; */
+  width: 80%;
 }
 
-.fill-btn:hover {
-	background-color: #cc3333;
-	color: var(--white);
-	box-shadow: inset 0 0px 10px 5px #750c0c;
+/* footer */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+footer {
+
+  width: 100%;
+  margin-top: 50px;
+  display: inline-block;
+  background: #ccc;
+  height: auto;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.outline-btn {
-	font-family: var(--font-primary);
-	font-weight: var(--fontWeight-regular);
-	color: var(--white);
-	border: 1px solid var(--acent);
-	padding: var(--btn-padding);
-	transition: var(--transition);
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: 16px 'Philosopher', sans-serif;
+  padding: 30px 50px;
+  margin-bottom: 0%;
 }
 
-.outline-btn:hover {
-	background-color: var(--acent);
-	color: var(--white);
-	border: 1px solid var(--acent);
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(71, 177, 177);
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
 }
 
-.btn-large {
-	font-size: var(--base-text);
-	padding: var(--large-btn-padding);
-	border-radius: var(--btn-radius);
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
 }
 
-.btn-small {
-	font-size: var(--text-small);
-	padding: var(--small-btn-padding);
-	border-radius: 8px;
+.footer-distributed .footer-links a:before {
+  content: " ";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
 }
 
-/* Icons */
-.outline-icon {
-	font-size: var(--text-small);
-	font-weight: var(--fontWeight-regular);
-	color: var(--text-color);
-	cursor: pointer;
-	outline: none !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.footer-distributed .footer-links .link-1:before {
+  content: none;
 }
 
-.outline-icon:hover,
-.outline-icon.active {
-	background-color: var(--acent);
-	color: var(--white);
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
 }
 
-.fill-icon {
-	font-size: var(--text-small);
-	font-weight: var(--fontWeight-regular);
-	color: var(--acent);
-	cursor: pointer;
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: rgb(71, 177, 177);
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
 }
+
+.footer-distributed .footer-right a:hover{
+  transform:scale(1.1); 
+  -webkit-transform:scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover{
+  text-decoration:underline;
+}
+
+/* greetings */
+.row.col-12{
+  margin-top: 100px;
+}
+
+.row.col-12{
+  padding: 0 20%;
+  margin-bottom: 50px;
+  color: #efefefb3;
+  font-size: 18px;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#msg, #greet{
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+  font-style: bold;
+  font-size: 30px;
+  color: rgb(71, 177, 177);
+}
+
